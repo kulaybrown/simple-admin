@@ -8,6 +8,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'antd';
 import { HomeWrapper } from './styles';
+// import 'antd/lib/button/style/css';
 
 export default function HomePage() {
   return (

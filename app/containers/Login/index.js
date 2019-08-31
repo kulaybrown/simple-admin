@@ -11,6 +11,12 @@ import { Link } from 'react-router-dom';
 import { Input, Button, Form, Checkbox, Icon, Alert } from 'antd';
 import { WrapperLogin } from './styles';
 import logo from '../../images/sample-logo.png';
+// import 'antd/lib/button/style/css';
+// import 'antd/lib/input/style/css';
+// import 'antd/lib/form/style/css';
+// import 'antd/lib/checkbox/style/css';
+// import 'antd/lib/icon/style/css';
+// import 'antd/lib/alert/style/css';
 
 class Login extends React.PureComponent {
   constructor(props) {

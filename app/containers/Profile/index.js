@@ -9,6 +9,12 @@ import { Link } from 'react-router-dom';
 import { Tabs, Icon, Typography, Divider, Button, Layout } from 'antd';
 import { WrapperProfile } from './styles';
 import logo from '../../images/sample-logo.png';
+// import 'antd/lib/tabs/style/css';
+// import 'antd/lib/icon/style/css';
+// import 'antd/lib/typography/style/css';
+// import 'antd/lib/divider/style/css';
+// import 'antd/lib/button/style/css';
+// import 'antd/lib/layout/style/css';
 
 const { TabPane } = Tabs;
 const { Paragraph } = Typography;
