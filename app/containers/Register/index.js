@@ -5,7 +5,8 @@
  */
 
 import React from 'react';
-import { Input, Button, Form, Icon, Checkbox } from 'antd';
+import { Link } from 'react-router-dom';
+import { Input, Button, Form, Icon, Checkbox, Alert } from 'antd';
 import { WrapperRegister } from './styles';
 // import 'antd/dist/antd.css';
 // let validator = require('email-validator');
@@ -15,6 +16,7 @@ class Register extends React.PureComponent {
     super(props);
     this.state = {
       confirmDirty: false,
+      isSuccess: false,
     };
   }
 
@@ -83,6 +85,7 @@ class Register extends React.PureComponent {
       .then(responseAsJson => {
         // eslint-disable-next-line no-console
         console.log(responseAsJson);
+        this.setState({ isSuccess: true });
       });
   };
 
@@ -94,6 +97,18 @@ class Register extends React.PureComponent {
         <div className="bgone" />
         <div className="bgtwo" />
         <Form onSubmit={this.handleSubmit}>
+          <Alert
+            className={
+              this.state.isSuccess
+                ? 'alert-create-account'
+                : 'alert-create-account alert-show'
+            }
+            type="success"
+            message="Creating an account, Successful!"
+            banner
+            closable
+          />
+          <h2>Create Account</h2>
           <Form.Item label="Name">
             {getFieldDecorator('name', {})(
               <Input
@@ -186,6 +201,7 @@ class Register extends React.PureComponent {
             >
               Submit
             </Button>
+            Or <Link to="/login">Login</Link>
           </Form.Item>
           <span className="smalltext">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero

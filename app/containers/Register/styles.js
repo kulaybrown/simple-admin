@@ -15,7 +15,7 @@ export const WrapperRegister = styled.section`
     -moz-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.3);
     background: #fff;
-    padding: 50px;
+    padding: 40px;
     max-width: 450px;
     width: 100%;
     z-index: 1;
@@ -25,6 +25,13 @@ export const WrapperRegister = styled.section`
     }
     label {
       font-family: 'Lato', sans-serif;
+    }
+    h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      color: #1890ff;
     }
     .login-form-button {
       width: 100%;
@@ -83,6 +90,15 @@ export const WrapperRegister = styled.section`
       top: 44%;
       transform: skewY(-8deg);
       z-index: 0;
+    }
+  }
+  .alert-create-account {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    &.alert-show {
+      display: none;
     }
   }
 `;
