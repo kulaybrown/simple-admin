@@ -1,4 +1,4 @@
-<h1>Simple Admin ( <a href="https://fortesting123.000webhostapp.com/">demo</a> )</h1>
+<h1>Simple Admin</h1>
 <p>simple admin/dashboard like with login, register, update</p>
 
 ## Resources
